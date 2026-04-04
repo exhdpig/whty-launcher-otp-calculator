@@ -1,6 +1,6 @@
 import time, hmac, hashlib, struct
 
-secret = b""#引号内填入密钥，想知道是什么自己解包去吧
+secret = b"12345678901234567890"#引号内填入密钥，此方法已失效，现直接填入密钥
 
 def totp():
     counter = int(time.time() / 1800)  # 30分钟
